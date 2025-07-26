@@ -1,18 +1,60 @@
-# Coffe-Sales-Project
+# ☕ Coffee Sales Data Analysis & Prediction
 
-📊 Overview
-This project aims to build a machine learning model to predict sales of coffee products based on historical retail data. It includes a complete data science pipeline: data preprocessing, feature engineering, model training, evaluation, and saving the model for deployment.
+## 📌 Overview
 
-🧠 Objective
-Predict total sales for a given coffee product entry using product details, discount rates, region, category, and more.
+This project focuses on analyzing and predicting coffee sales using a dataset that includes features like product types, regions, sales volumes, and revenue. The goal is to uncover trends and build regression models that accurately forecast sales performance across different categories.
 
-🔧 Technologies Used
-Python
+---
 
-Pandas & NumPy
+## 🎯 Objectives
 
-Scikit-learn
+- Perform exploratory data analysis (EDA) on coffee sales.
+- Identify top-performing products, regions, and revenue trends.
+- Build regression models to predict future sales.
+- Compare model performance using R² and RMSE metrics.
 
-Matplotlib & Seaborn
+---
 
-Joblib (for model serialization)
+## 🗃️ Dataset
+
+- Source: Local CSV file (`index.csv`)
+- Key Features:
+  - `Product`, `Region`, `Revenue`, `Profit`
+  - `Date`, `Customer Type`, `Sales Volume`
+
+---
+
+## 🔍 Exploratory Insights
+
+- Sales trends visualized over time using **Plotly** and **Seaborn**.
+- Comparison of sales by:
+  - Product category
+  - Region
+  - Customer segment
+- Correlation heatmaps and distribution plots used to detect patterns.
+
+---
+
+## 🤖 Machine Learning Models Used
+
+| Model                     | Evaluation Metric |
+|--------------------------|-------------------|
+| Linear Regression         | R², RMSE          |
+| Decision Tree Regressor   | R², RMSE          |
+| Random Forest Regressor   | R², RMSE          |
+| Gradient Boosting         | R², RMSE          |
+| XGBoost Regressor         | ✅ Best accuracy   |
+
+> StandardScaler and OneHotEncoding were applied for preprocessing.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Language:** Python
+- **Libraries:**
+  - `pandas`, `numpy`, `matplotlib`, `seaborn`, `plotly`
+  - `scikit-learn`, `xgboost`
+
+---
+
